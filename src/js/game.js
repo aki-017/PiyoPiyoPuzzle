@@ -336,6 +336,7 @@ var PiyoPiyo = (function(window) {
     this.gamespeed = 1.0;
     this.breaked = 0;
     this.maxcombo = 0;
+    this.combo = 0;
     this.playtime = 0;
   }
 
