@@ -157,6 +157,7 @@ var PiyoPiyo = (function(window) {
           text.flag = !text.flag;
       }
       self.stage.addEventListener("click", function() {
+        window.document.getElementById('help').style.display="none";
         self.stage.removeAllChildren();
         self.stage.removeAllEventListeners("click");
         self.stage.update();

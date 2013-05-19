@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon" href="icon.png"/>
@@ -75,17 +76,31 @@
         font-size: 1.5em;
         text-align: right;
       }
+      #help{
+        display: none;
+      }
     </style>
   </head>
   <body>
     <div id="information">
       <h1>PiyoPiyo</h1>
-      <div id="score"></div>
+      <div id="score"><span onclick="document.getElementById('help').style.display='block';">&lt;HELP&gt;</span></div>
       <div id="timegage"><div id="bar"><div id="bar2"><div id="bar3"></div></div></div></div>
     </div>
+    <div id="help" onclick="document.getElementById('help').style.display='none';">
+      <ul>
+        <li>４つ並べると消せます</li>
+        <li>なぞると複数同時に消せます</li>
+        <li>制限時間がなくなるとゲームオーバー</li>
+        <li>より高いスコアを取りましょう</li>
+      </ul>
+    </div>
     <canvas id="canvas" width="640" height="640"></canvas>
+
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
