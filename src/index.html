@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="icon.png"/>
+    <link rel="apple-touch-startup-image" href="images/splash.png" />
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:title" content="PiyoPiyoPuzzle">
+    <meta name="twitter:description" content="PiyoPiyoPuzzleで遊ぼう！">
+    <meta name="twitter:image" content="http://www.aki017.info/works/game/PiyoPiyo/images/splash.png">
+    <meta name="twitter:site" content="@aki017">
+    <meta name="twitter:creator" content="@PiyoPiyoPuzzle">
+    <meta name="twitter:data1" content="PiyoPiyoPuzzle">
+    <meta name="twitter:label1" content="Title">
+    <meta name="twitter:data2" content="Puzzle">
+    <meta name="twitter:label2" content="Genre">
+
+    <title>PiyoPiyoPuzzle</title>
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="./js/lib/createjs-2013.02.12.min.js"></script>
+    <script type="text/javascript" src="./js/game.js"></script>
+    <style>
+      body{
+        background:url(resources/default/images/back.jpg) no-repeat;
+        background-size: 100%;
+        margin:0px;
+        padding:0px;
+        overflow:hidden;
+      }
+      #information{
+        background-color:rgba(0,0,0,0.3);
+        color:rgba(255,255,255,1);
+        font-family: 'Days One', sans-serif;
+        height: 140px;
+        width: 100%;
+      }
+      #timegage{
+        height: 16px;
+        width: 100%;
+        background-color:rgba(0,0,0,0.3);
+      }
+      #bar{
+        height: 16px;
+        width: 50%;
+        background-color:rgba(255,255,255,0.7);
+        text-align: right;
+      }
+      #bar2{
+        height: 16px;
+        width: 0%;
+        background-color:rgba(0,255,00,0.7);
+        text-align: right;
+      }
+      #bar3{
+        height: 16px;
+        width: 0%;
+        background-color:rgba(0,0,255,0.7);
+        text-align: right;
+      }
+      h1{
+        height: 72px;
+        margin: 0px;
+        padding-top: 10px;
+        font-size: 3em;
+        text-align: center;
+      }
+      canvas{
+        width: 100%;
+        max-width: 640px;
+      }
+      #score{
+        height: 41px;
+        font-size: 1.5em;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="information">
+      <h1>PiyoPiyo</h1>
+      <div id="score"></div>
+      <div id="timegage"><div id="bar"><div id="bar2"><div id="bar3"></div></div></div></div>
+    </div>
+    <canvas id="canvas" width="640" height="640"></canvas>
+  </body>
+</html>
+
