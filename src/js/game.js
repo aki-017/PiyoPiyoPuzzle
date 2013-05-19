@@ -233,10 +233,11 @@ var PiyoPiyo = (function(window) {
       },delay);
     }
 
-    addText("Score",self.score,2000);
-    addText("Breaked Panel",self.breaked,3000);
-    addText("Max Combo",self.maxcombo,4000);
-    addText("GameSpeed",(~~( self.gamespeed*100)),5000);
+    addText("Score",self.score,1000);
+    addText("Breaked Panel",self.breaked,2000);
+    addText("Max Combo",self.maxcombo,3000);
+    addText("GameSpeed",(~~( self.gamespeed*100)),4000);
+    addText("PlayTime",~~(self.playtime / 100),5000);
 
     var counter2 = -0.5;
     var addShareButton = function(name,url,flag) {
